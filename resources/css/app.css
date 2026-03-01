@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-page text-slate-800 antialiased transition-colors duration-300 dark:bg-page-dark dark:text-slate-100;
+    }
+}
+
+@layer components {
+    .surface-card {
+        @apply rounded-[0.625rem] border border-slate-200 bg-white shadow-[0_2px_8px_rgba(15,23,42,0.05)] transition-colors duration-300 dark:border-border-dark dark:bg-card-dark;
+    }
+
+    .ghost-btn {
+        @apply inline-flex h-10 w-10 items-center justify-center rounded-[0.625rem] border border-slate-200 text-slate-500 transition-all duration-200 hover:border-slate-300 hover:bg-slate-100 hover:text-slate-700 dark:border-border-dark dark:text-slate-300 dark:hover:bg-slate-800;
+    }
+
+    .menu-item {
+        @apply flex w-full items-center gap-3 rounded-[0.625rem] px-3 py-2.5 text-sm font-medium text-slate-600 transition-all duration-200 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-slate-800/80 dark:hover:text-white;
+    }
+
+    .menu-item-active {
+        @apply bg-primary text-white shadow-[0_2px_10px_rgba(24,148,237,0.25)] hover:bg-primary hover:text-white;
+    }
+}
+
+@layer components {
+    .note-editor.note-frame {
+        @apply rounded-[0.625rem] border border-slate-200 shadow-sm;
+    }
+
+    .note-editor .note-toolbar {
+        @apply rounded-t-[0.625rem] border-b border-slate-200 bg-slate-50;
+    }
+
+    .note-editor .note-editing-area .note-editable {
+        @apply bg-white text-slate-800;
+    }
+
+    .dark .note-editor.note-frame {
+        @apply border-border-dark;
+    }
+
+    .dark .note-editor .note-toolbar {
+        @apply border-border-dark bg-slate-900;
+    }
+
+    .dark .note-editor .note-btn {
+        @apply border-border-dark bg-slate-900 text-slate-200 hover:bg-slate-800;
+    }
+
+    .dark .note-editor .note-editing-area .note-editable {
+        @apply bg-card-dark text-slate-100;
+    }
+
+    .dark .note-editor .note-statusbar {
+        @apply border-border-dark bg-slate-900;
+    }
+}

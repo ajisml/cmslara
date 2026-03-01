@@ -1,0 +1,48 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# PHP / Laravel
+/vendor
+/bootstrap/cache/*.php
+!/bootstrap/cache/.gitignore
+/storage/*.key
+/storage/logs/*.log
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+/storage/pail
+/.phpunit.cache
+.phpunit.result.cache
+.phpactor.json
+auth.json
+
+# Node / Frontend
+/node_modules
+/public/build
+/public/hot
+/public/storage
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local files
+Homestead.json
+Homestead.yaml
+_template_index_backup.html
