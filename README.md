@@ -30,6 +30,17 @@ CMS Admin berbasis Laravel 12 + Inertia + React untuk pengelolaan konten website
 - Revisi/versioning konten + rollback versi.
 - Dark mode / light mode.
 
+## Demo Screenshot
+
+### Dashboard
+![Dashboard CMSLara](./screenshot/Dashboard%20-%20CMSLara.png)
+
+### Kelola Menu (Drag & Drop)
+![Kelola Menu CMSLara](./screenshot/Kelola%20Menu%20(Drag%26Drop)%20-%20CMSLara.png)
+
+### Audit Log
+![Audit Log CMSLara](./screenshot/Audit%20Log%20-%20CMSLara.png)
+
 ## Struktur Konten
 - Postingan: `Kelola Postingan`.
 - Laman: `Kelola Laman`.
